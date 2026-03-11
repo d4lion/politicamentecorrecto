@@ -1,0 +1,180 @@
+{
+  "nav": {
+    "home": "Home",
+    "story": "Story",
+    "volunteers": "Volunteers",
+    "donate": "Donate"
+  },
+  "home": {
+    "hero_badge": "Social-Environmental Project",
+    "hero_title_1": "We turn",
+    "hero_title_accent_1": "waste",
+    "hero_title_2": "into",
+    "hero_title_accent_2": "hope",
+    "hero_subtitle": "We transform political campaign materials into solutions for underprivileged children.",
+    "cta_more": "Learn more",
+    "cta_impact": "Our impact",
+    "trust": {
+      "item1": "Registered and transparent project",
+      "item2": "Recognized by socio-environmental networks",
+      "item3": "100% non-profit",
+      "item4": "Certified circular economy"
+    },
+    "mission": {
+      "label": "Our Mission",
+      "title": "Who we are",
+      "p1": "Políticamente Correcto is a socio-environmental educational project that transforms leftover election campaign materials into backpacks for children in need. We use banner canvas, a waterproof and resistant material that would otherwise be highly harmful to the environment.",
+      "p2": "We aim to reduce the environmental impact of political campaigns. Much of this material ends up in rivers or is burned, producing toxins. Where many see waste, we see an opportunity to provide solutions.",
+      "p3": "We don't just make backpacks; we fill them with school supplies. The material also allows children to decorate them with markers, fostering creativity. Ideologies don't matter here; CHILDREN MATTER.",
+      "cta": "Join the project",
+      "img_alt": "Project image"
+    },
+    "stats": {
+      "label": "By the Numbers",
+      "title": "Measurable impact, real results",
+      "backpacks": "Backpacks delivered",
+      "volunteers": "Active volunteers",
+      "cities": "Cities reached",
+      "years": "Years of impact"
+    },
+    "process": {
+      "label": "The Process",
+      "title": "From political banner to school backpack",
+      "step1": "Post-campaign banner collection.",
+      "step2": "Cleaning and material treatment.",
+      "step3": "Handcrafted backpack production.",
+      "step4": "Delivery with supplies and creative kits."
+    },
+    "testimonials": {
+      "label": "Testimonials",
+      "title": "What people who know us say",
+      "t1": {
+        "quote": "Seeing my son receive his new backpack was one of the most beautiful moments. They are doing something that goes far beyond the material.",
+        "author": "María López",
+        "role": "Beneficiary mother, Bogotá"
+      },
+      "t2": {
+        "quote": "As a volunteer, I understood that real change comes from small collective actions. Políticamente Correcto makes it possible.",
+        "author": "Andrés Mora",
+        "role": "Volunteer since 2022"
+      },
+      "t3": {
+        "quote": "An initiative that proves social responsibility and creativity can turn waste into real opportunities.",
+        "author": "Catalina Reyes",
+        "role": "Institutional ally"
+      }
+    },
+    "allies": {
+      "label": "Allies",
+      "title": "Backed by organizations that believe in change",
+      "desc": "We work with partners committed to sustainability and education.",
+      "a1": { "name": "Strategic Ally 1", "role": "Recycling & Sustainability" },
+      "a2": { "name": "Strategic Ally 2", "role": "Logistics Support" },
+      "a3": { "name": "Strategic Ally 3", "role": "Regional Distribution" },
+      "a4": { "name": "Strategic Ally 4", "role": "Educational Foundation" }
+    },
+    "cta_band": {
+      "title": "Want to be part of the change?",
+      "desc": "We have room for volunteers, allies, and people who believe there is another way of doing things.",
+      "volunteer": "Become a Volunteer",
+      "donate": "Donate now"
+    }
+  },
+  "timeline": {
+    "label": "History",
+    "title": "Our Evolution",
+    "subtitle": "A journey through the impact of Políticamente Correcto over time",
+    "status": {
+      "completed": "Completed",
+      "current": "Ongoing",
+      "upcoming": "Upcoming"
+    },
+    "events": [
+      {
+        "year": "2019",
+        "title": "The Beginning",
+        "description": "First banner collection initiative during local elections. The birth of an idea that would change lives.",
+        "status": "completed"
+      },
+      {
+        "year": "2022",
+        "title": "Consolidation",
+        "description": "Delivery of the first 500 backpacks to rural communities. The model starts to be tested at scale.",
+        "status": "completed"
+      },
+      {
+        "year": "2023",
+        "title": "Strategic Alliances",
+        "description": "Agreements with recycling companies to optimize production. The support network grows.",
+        "status": "completed"
+      },
+      {
+        "year": "2025",
+        "title": "National Expansion",
+        "description": "Program launched in 5 major cities. More than 1,500 backpacks delivered.",
+        "status": "current"
+      },
+      {
+        "year": "2026",
+        "title": "Toward the Future",
+        "description": "100% scalable circular model at a Latin American level. The vision goes global.",
+        "status": "upcoming"
+      }
+    ]
+  },
+  "volunteer": {
+    "label": "Volunteering",
+    "title": "Be part of the",
+    "title_accent": "Change",
+    "desc": "We are looking for creative hands and willing hearts. Whether you are a designer, logistics expert, or simply someone who wants to help, there is a place for you at Políticamente Correcto.",
+    "benefits": {
+      "environmental": "Tangible environmental impact",
+      "children": "Direct help for children",
+      "network": "Network of committed people",
+      "circular": "Hands-on circular economy experience"
+    },
+    "stats": {
+      "backpacks": "Backpacks delivered",
+      "volunteers": "Active volunteers"
+    },
+    "form": {
+      "title": "Send your application",
+      "subtitle": "We will contact you within 48 hours",
+      "name_label": "Full Name",
+      "name_placeholder": "Your full name",
+      "email_label": "Email Address",
+      "email_placeholder": "you@email.com",
+      "message_label": "How do you want to help?",
+      "message_placeholder": "Tell us about yourself and how you'd like to contribute...",
+      "submit": "Submit application",
+      "privacy": "Your data is safe. We do not share it with third parties."
+    },
+    "success": {
+      "title": "Thank you for joining!",
+      "desc": "We have received your application. We will be in touch soon to transform the world together.",
+      "back": "Back to form"
+    }
+  },
+  "footer": {
+    "tagline": "We transform political campaign waste into backpacks and school supplies for underprivileged children.",
+    "sections": {
+      "navigate": "Navigate",
+      "participate": "Participate",
+      "contact": "Contact"
+    },
+    "links": {
+      "home": "Home",
+      "story": "Our Story",
+      "volunteers": "Volunteers",
+      "volunteer_cta": "Become a volunteer",
+      "donate": "Donate",
+      "ally": "Become an ally"
+    },
+    "seals": {
+      "social": "Social-Environmental Project",
+      "circular": "Circular Economy",
+      "nonprofit": "Non-Profit"
+    },
+    "copy": "Made with love in Colombia."
+  }
+}

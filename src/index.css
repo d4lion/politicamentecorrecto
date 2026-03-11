@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  /* === BRAND COLORS === */
+  --green-deep:    #2D6A4F;
+  --green-mid:     #40916C;
+  --green-soft:    #74C69D;
+  --green-pale:    #D8F3DC;
+  --green-tint:    #F0FAF3;
+
+  /* === NEUTRALS === */
+  --white:         #FFFFFF;
+  --beige-light:   #FAF7F2;
+  --beige-mid:     #F2EDE3;
+  --beige-warm:    #E8DFD0;
+  --stone:         #C9BCA8;
+  --stone-dark:    #8C7B68;
+
+  /* === TEXT === */
+  --text-dark:     #1C2820;
+  --text-body:     #3D4F40;
+  --text-muted:    #6B7C6E;
+  --text-light:    #9BAD9F;
+
+  /* === ACCENT === */
+  --amber:         #E07B39;
+  --amber-light:   #F5A263;
+
+  /* === SEMANTIC === */
+  --bg:            var(--beige-light);
+  --surface:       var(--white);
+  --border:        rgba(44, 106, 79, 0.12);
+  --border-light:  rgba(44, 106, 79, 0.07);
+
+  /* === SHADOWS === */
+  --shadow-xs:     0 1px 3px rgba(28, 40, 32, 0.06);
+  --shadow-sm:     0 2px 12px rgba(28, 40, 32, 0.08);
+  --shadow-md:     0 8px 32px rgba(28, 40, 32, 0.10);
+  --shadow-lg:     0 20px 60px rgba(28, 40, 32, 0.12);
+  --shadow-green:  0 8px 32px rgba(45, 106, 79, 0.20);
+
+  /* === SHAPE === */
+  --radius-xs:     8px;
+  --radius-sm:     14px;
+  --radius:        20px;
+  --radius-lg:     32px;
+  --radius-xl:     48px;
+  --radius-pill:   100px;
+
+  /* === GRADIENTS === */
+  --grad-hero:     linear-gradient(160deg, #1A4030 0%, #2D6A4F 60%, #40916C 100%);
+  --grad-green:    linear-gradient(135deg, var(--green-deep) 0%, var(--green-mid) 100%);
+  --grad-soft:     linear-gradient(135deg, var(--green-soft) 0%, var(--green-mid) 100%);
+  --grad-amber:    linear-gradient(135deg, var(--amber) 0%, var(--amber-light) 100%);
+  --grad-beige:    linear-gradient(160deg, var(--beige-light) 0%, var(--beige-mid) 100%);
+  --grad-section:  linear-gradient(180deg, var(--white) 0%, var(--beige-light) 100%);
+
+  /* === TYPOGRAPHY === */
+  --font:     'Outfit', sans-serif;
+  --font-alt: 'Space Grotesk', sans-serif;
+
+  /* === TRANSITIONS === */
+  --ease:        cubic-bezier(0.16, 1, 0.3, 1);
+  --transition:  all 0.4s var(--ease);
+  --transition-fast: all 0.2s ease;
+}
+
+/* =========================================
+   RESET & BASE
+   ========================================= */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-dark);
+  font-family: var(--font);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* =========================================
+   UTILITY CLASSES
+   ========================================= */
+
+/* Cards */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-beige {
+  background: var(--beige-mid);
+  border: 1px solid var(--beige-warm);
+  border-radius: var(--radius-lg);
+}
+
+/* Text gradients */
+.gradient-text {
+  background: var(--grad-green);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-amber {
+  background: var(--grad-amber);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.badge-green {
+  background: var(--green-pale);
+  color: var(--green-deep);
+  border: 1px solid rgba(45, 106, 79, 0.2);
+}
+
+/* Section labels */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green-mid);
+  margin-bottom: 14px;
+}
+
+.section-label::before {
+  content: '';
+  width: 24px;
+  height: 2px;
+  background: var(--green-mid);
+  border-radius: 2px;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+.btn-primary {
+  background: var(--grad-green);
+  color: var(--white);
+  padding: 14px 32px;
+  border-radius: var(--radius-pill);
+  border: none;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-green);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(45, 106, 79, 0.35);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--green-deep);
+  padding: 13px 32px;
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--green-deep);
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-outline:hover {
+  background: var(--green-deep);
+  color: var(--white);
+}
+
+.btn-amber {
+  background: var(--grad-amber);
+  color: var(--white);
+  padding: 14px 32px;
+  border-radius: var(--radius-pill);
+  border: none;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 30px rgba(224, 123, 57, 0.30);
+}
+
+.btn-amber:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(224, 123, 57, 0.45);
+}
+
+.btn-ghost {
+  background: rgba(45, 106, 79, 0.08);
+  color: var(--green-deep);
+  padding: 13px 28px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(45, 106, 79, 0.16);
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-ghost:hover {
+  background: rgba(45, 106, 79, 0.14);
+}
+
+/* =========================================
+   SCROLLBAR
+   ========================================= */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--beige-mid); }
+::-webkit-scrollbar-thumb { background: var(--green-soft); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--green-mid); }
+
+/* =========================================
+   BG DECORATIONS
+   ========================================= */
+.bg-dots {
+  background-image: radial-gradient(circle, var(--beige-warm) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.divider-wave {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}

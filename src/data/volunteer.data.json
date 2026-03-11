@@ -1,0 +1,7 @@
+{
+  "volunteerStats": [
+    { "value": "+1.500", "key": "volunteer.stats.backpacks" },
+    { "value": "50+",    "key": "volunteer.stats.volunteers" }
+  ],
+  "benefitIcons": ["Leaf", "Heart", "Users", "Package"]
+}

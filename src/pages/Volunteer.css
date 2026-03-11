@@ -1,0 +1,233 @@
+/* =========================================
+   VOLUNTEER PAGE
+   ========================================= */
+.volunteer-page {
+  padding-top: 110px;
+  min-height: 100vh;
+  background: var(--beige-light);
+}
+
+.vol-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 5% 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* LEFT INFO */
+.vol-title {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  color: var(--text-dark);
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  margin: 10px 0 18px;
+}
+
+.vol-desc {
+  font-size: 1rem;
+  color: var(--text-body);
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+.vol-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text-body);
+}
+
+.benefit-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--green-tint);
+  border: 1px solid rgba(45, 106, 79, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-deep);
+  flex-shrink: 0;
+}
+
+.vol-stats {
+  display: flex;
+  align-items: center;
+  padding: 24px 28px;
+  gap: 24px;
+  border-radius: var(--radius);
+}
+
+.vol-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vol-stat-num {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--green-deep);
+  line-height: 1;
+  font-family: var(--font-alt);
+}
+
+.vol-stat-label {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.vol-stat-divider {
+  width: 1px;
+  height: 48px;
+  background: var(--border);
+}
+
+/* RIGHT FORM */
+.vol-form-wrap {
+  padding: 40px 36px;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+}
+
+.vol-form-header {
+  margin-bottom: 28px;
+}
+
+.vol-form-header h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.vol-form-header p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.vol-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-grp {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-grp label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-body);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.input-grp input,
+.input-grp textarea {
+  background: var(--beige-light);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  color: var(--text-dark);
+  font-family: var(--font);
+  font-size: 0.92rem;
+  transition: var(--transition-fast);
+  resize: vertical;
+}
+
+.input-grp input::placeholder,
+.input-grp textarea::placeholder {
+  color: var(--text-light);
+}
+
+.input-grp input:focus,
+.input-grp textarea:focus {
+  outline: none;
+  border-color: var(--green-mid);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.1);
+}
+
+.vol-submit {
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+  font-size: 0.96rem;
+}
+
+.form-privacy {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+/* SUCCESS STATE */
+.success-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-card {
+  text-align: center;
+  padding: 60px 48px;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  border-radius: var(--radius-xl);
+}
+
+.success-icon {
+  color: var(--green-mid);
+  background: var(--green-tint);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-card h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.success-card p {
+  font-size: 0.96rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 880px) {
+  .vol-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .vol-form-wrap {
+    padding: 28px 24px;
+  }
+}

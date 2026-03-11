@@ -1,0 +1,46 @@
+{
+  "stats": [
+    { "key": "backpacks", "value": "+1.500", "icon": "Package" },
+    { "key": "volunteers", "value": "50+",    "icon": "Users"   },
+    { "key": "cities",     "value": "5",       "icon": "MapPin"  },
+    { "key": "years",      "value": "7",       "icon": "Calendar"}
+  ],
+  "processSteps": [
+    { "num": "01", "icon": "Recycle"  },
+    { "num": "02", "icon": "Droplets" },
+    { "num": "03", "icon": "Scissors" },
+    { "num": "04", "icon": "Gift"     }
+  ],
+  "testimonials": [
+    {
+      "id": "t1",
+      "quote_key": "home.testimonials.t1.quote",
+      "author_key": "home.testimonials.t1.author",
+      "role_key": "home.testimonials.t1.role"
+    },
+    {
+      "id": "t2",
+      "quote_key": "home.testimonials.t2.quote",
+      "author_key": "home.testimonials.t2.author",
+      "role_key": "home.testimonials.t2.role"
+    },
+    {
+      "id": "t3",
+      "quote_key": "home.testimonials.t3.quote",
+      "author_key": "home.testimonials.t3.author",
+      "role_key": "home.testimonials.t3.role"
+    }
+  ],
+  "allies": [
+    { "id": "a1", "name_key": "home.allies.a1.name", "role_key": "home.allies.a1.role" },
+    { "id": "a2", "name_key": "home.allies.a2.name", "role_key": "home.allies.a2.role" },
+    { "id": "a3", "name_key": "home.allies.a3.name", "role_key": "home.allies.a3.role" },
+    { "id": "a4", "name_key": "home.allies.a4.name", "role_key": "home.allies.a4.role" }
+  ],
+  "trustPoints": [
+    { "icon": "Shield",      "key": "home.trust.item1" },
+    { "icon": "Award",       "key": "home.trust.item2" },
+    { "icon": "CheckCircle", "key": "home.trust.item3" },
+    { "icon": "Leaf",        "key": "home.trust.item4" }
+  ]
+}

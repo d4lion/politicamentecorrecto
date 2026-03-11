@@ -1,0 +1,180 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "story": "Historia",
+    "volunteers": "Voluntarios",
+    "donate": "Donar"
+  },
+  "home": {
+    "hero_badge": "Proyecto Socioambiental",
+    "hero_title_1": "Transformamos",
+    "hero_title_accent_1": "residuos",
+    "hero_title_2": "en",
+    "hero_title_accent_2": "esperanza",
+    "hero_subtitle": "Transformamos material de campañas electorales en soluciones para niños de escasos recursos.",
+    "cta_more": "Conocer más",
+    "cta_impact": "Nuestro impacto",
+    "trust": {
+      "item1": "Proyecto registrado y transparente",
+      "item2": "Reconocido por redes socioambientales",
+      "item3": "100% sin fines de lucro",
+      "item4": "Economía circular certificada"
+    },
+    "mission": {
+      "label": "Nuestra Misión",
+      "title": "¿Quiénes somos?",
+      "p1": "Políticamente Correcto es un proyecto socioambiental educativo que transforma el material sobrante de las campañas electorales en mochilas para niños y niñas de escasos recursos. Usamos lona banner, un material impermeable y resistente que, de no ser reutilizado, sería altamente perjudicial para el medio ambiente.",
+      "p2": "Buscamos reducir el impacto ambiental de las campañas. Gran parte de este material termina en ríos o se quema, produciendo toxinas. Donde muchos ven residuos, nosotros vemos una oportunidad de brindar soluciones.",
+      "p3": "No solo elaboramos mochilas; las llenamos con útiles escolares. Además, el material permite que los niños las decoren con marcadores, fomentando su creatividad. Aquí no importan las ideologías, IMPORTAN LOS NIÑOS.",
+      "cta": "Únete al proyecto",
+      "img_alt": "Imagen del proyecto"
+    },
+    "stats": {
+      "label": "Nuestros Números",
+      "title": "Impacto medible, resultados reales",
+      "backpacks": "Mochilas entregadas",
+      "volunteers": "Voluntarios activos",
+      "cities": "Ciudades alcanzadas",
+      "years": "Años de impacto"
+    },
+    "process": {
+      "label": "El Proceso",
+      "title": "De banner político a mochila escolar",
+      "step1": "Recolección de banners post-campaña.",
+      "step2": "Limpieza y tratamiento del material.",
+      "step3": "Confección artesanal de mochilas.",
+      "step4": "Entrega con útiles y kits creativos."
+    },
+    "testimonials": {
+      "label": "Testimonios",
+      "title": "Lo que dicen quienes nos conocen",
+      "t1": {
+        "quote": "Ver a mi hijo recibir su mochila nueva fue uno de los momentos más hermosos. Están haciendo algo que va más allá de lo material.",
+        "author": "María López",
+        "role": "Madre beneficiaria, Bogotá"
+      },
+      "t2": {
+        "quote": "Como voluntario, entendí que el verdadero cambio está en las pequeñas acciones colectivas. Políticamente Correcto lo hace posible.",
+        "author": "Andrés Mora",
+        "role": "Voluntario desde 2022"
+      },
+      "t3": {
+        "quote": "Una iniciativa que demuestra que la responsabilidad social y la creatividad pueden transformar residuos en oportunidades reales.",
+        "author": "Catalina Reyes",
+        "role": "Aliada institucional"
+      }
+    },
+    "allies": {
+      "label": "Aliados",
+      "title": "Respaldados por organizaciones que creen en el cambio",
+      "desc": "Trabajamos con socios comprometidos con la sostenibilidad y la educación.",
+      "a1": { "name": "Aliado Estratégico 1", "role": "Reciclaje & Sostenibilidad" },
+      "a2": { "name": "Aliado Estratégico 2", "role": "Apoyo Logístico" },
+      "a3": { "name": "Aliado Estratégico 3", "role": "Distribución Regional" },
+      "a4": { "name": "Aliado Estratégico 4", "role": "Fundación Educativa" }
+    },
+    "cta_band": {
+      "title": "¿Quieres ser parte del cambio?",
+      "desc": "Tenemos espacio para voluntarios, aliados y personas que creen que hay otra forma de hacer las cosas.",
+      "volunteer": "Ser Voluntario",
+      "donate": "Donar ahora"
+    }
+  },
+  "timeline": {
+    "label": "Historia",
+    "title": "Nuestra Evolución",
+    "subtitle": "Un recorrido por el impacto de Políticamente Correcto a través del tiempo",
+    "status": {
+      "completed": "Completado",
+      "current": "En curso",
+      "upcoming": "Próximo"
+    },
+    "events": [
+      {
+        "year": "2019",
+        "title": "El Comienzo",
+        "description": "Primera iniciativa de recolección de pendones en elecciones locales. Nacimiento de una idea que cambiaría vidas.",
+        "status": "completed"
+      },
+      {
+        "year": "2022",
+        "title": "Consolidación",
+        "description": "Entrega de las primeras 500 mochilas a comunidades rurales. El modelo empieza a probarse a escala.",
+        "status": "completed"
+      },
+      {
+        "year": "2023",
+        "title": "Alianzas Estratégicas",
+        "description": "Convenios con empresas de reciclaje para optimizar la producción. La red de apoyo crece.",
+        "status": "completed"
+      },
+      {
+        "year": "2025",
+        "title": "Expansión Nacional",
+        "description": "Lanzamiento del programa en 5 ciudades principales del país. Más de 1.500 mochilas entregadas.",
+        "status": "current"
+      },
+      {
+        "year": "2026",
+        "title": "Hacia el Futuro",
+        "description": "Modelo 100% circular escalable a nivel latinoamericano. La visión se hace global.",
+        "status": "upcoming"
+      }
+    ]
+  },
+  "volunteer": {
+    "label": "Voluntariado",
+    "title": "Sé parte del",
+    "title_accent": "Cambio",
+    "desc": "Buscamos manos creativas y corazones dispuestos. Ya seas diseñador, logístico o simplemente alguien que quiera ayudar, hay un lugar para ti en Políticamente Correcto.",
+    "benefits": {
+      "environmental": "Impacto ambiental tangible",
+      "children": "Ayuda directa a niños",
+      "network": "Red de personas comprometidas",
+      "circular": "Experiencia práctica en economía circular"
+    },
+    "stats": {
+      "backpacks": "Mochilas entregadas",
+      "volunteers": "Voluntarios activos"
+    },
+    "form": {
+      "title": "Envía tu solicitud",
+      "subtitle": "Te contactamos en menos de 48 horas",
+      "name_label": "Nombre Completo",
+      "name_placeholder": "Tu nombre completo",
+      "email_label": "Correo Electrónico",
+      "email_placeholder": "tu@correo.com",
+      "message_label": "¿Cómo quieres ayudar?",
+      "message_placeholder": "Cuéntanos sobre ti y cómo te gustaría contribuir...",
+      "submit": "Enviar solicitud",
+      "privacy": "Tus datos están seguros. No los compartimos con terceros."
+    },
+    "success": {
+      "title": "¡Gracias por unirte!",
+      "desc": "Hemos recibido tu solicitud. Pronto nos pondremos en contacto para transformar el mundo juntos.",
+      "back": "Volver al formulario"
+    }
+  },
+  "footer": {
+    "tagline": "Transformamos residuos de campañas electorales en mochilas y útiles escolares para niños de escasos recursos.",
+    "sections": {
+      "navigate": "Navegar",
+      "participate": "Participa",
+      "contact": "Contacto"
+    },
+    "links": {
+      "home": "Inicio",
+      "story": "Nuestra Historia",
+      "volunteers": "Voluntarios",
+      "volunteer_cta": "Ser voluntario",
+      "donate": "Donar",
+      "ally": "Ser aliado"
+    },
+    "seals": {
+      "social": "Proyecto Socioambiental",
+      "circular": "Economía Circular",
+      "nonprofit": "Sin Ánimo de Lucro"
+    },
+    "copy": "Hecho con amor en Colombia."
+  }
+}

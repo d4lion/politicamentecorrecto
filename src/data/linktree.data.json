@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "name": "Políticamente Correcto",
+    "description": "Transformamos residuos electorales en esperanza 🎒♻️"
+  },
+  "links": [
+    {
+      "id": "l1",
+      "title": "Nuestra página web",
+      "url": "/",
+      "icon": "Globe",
+      "featured": true
+    },
+    {
+      "id": "l2",
+      "title": "Donar ahora (Vaki)",
+      "url": "https://vaki.co/politicamente-correcto",
+      "icon": "Heart",
+      "featured": true
+    },
+    {
+      "id": "l3",
+      "title": "Únete como Voluntario",
+      "url": "/volunteer",
+      "icon": "Users",
+      "featured": false
+    },
+    {
+      "id": "l4",
+      "title": "Nuestra Historia",
+      "url": "/timeline",
+      "icon": "BookOpen",
+      "featured": false
+    },
+    {
+      "id": "l5",
+      "title": "Contáctanos",
+      "url": "mailto:hola@politicamentecorrecto.co",
+      "icon": "Mail",
+      "featured": false
+    }
+  ],
+  "socials": [
+    {
+      "id": "s1",
+      "platform": "Instagram",
+      "url": "#",
+      "icon": "Instagram"
+    },
+    {
+      "id": "s2",
+      "platform": "Facebook",
+      "url": "#",
+      "icon": "Facebook"
+    },
+    {
+      "id": "s3",
+      "platform": "Twitter",
+      "url": "#",
+      "icon": "Twitter"
+    }
+  ]
+}
