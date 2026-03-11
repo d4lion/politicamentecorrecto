@@ -8,6 +8,7 @@ import Volunteer from './pages/Volunteer';
 import LinkTree from './pages/LinkTree';
 import './i18n/config';
 import './index.css';
+import { Analytics } from '@vercel/analytics/react';
 
 // A wrapper component to conditionally render global UI elements (Navbar, Footer, etc.)
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
@@ -15,12 +16,16 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
   const isLinkTree = location.pathname === '/linktree';
 
   if (isLinkTree) {
-    return <main>{children}</main>; // Returns only the page, no Navbar/Footer
+    return <>
+      <Analytics />
+      <main>{children}</main>
+    </>; // Returns only the page, no Navbar/Footer
   }
 
   return (
     <>
       <Navbar />
+      <Analytics />
       <SideNav />
       <main>{children}</main>
       <Footer />
