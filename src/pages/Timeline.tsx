@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, CheckCircle, Rocket, Clock } from 'lucide-react';
+import { CheckCircle, Rocket, Clock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import './Timeline.css';
 
@@ -10,8 +10,8 @@ type StatusType = 'completed' | 'current' | 'upcoming';
 
 const statusIcon: Record<StatusType, React.ReactNode> = {
   completed: <CheckCircle size={16} />,
-  current:   <Rocket size={16} />,
-  upcoming:  <Clock size={16} />,
+  current: <Rocket size={16} />,
+  upcoming: <Clock size={16} />,
 };
 
 const Timeline: React.FC = () => {

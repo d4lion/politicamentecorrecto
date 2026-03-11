@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, User, Mail, MessageSquare, Heart, CheckCircle, ArrowRight, Leaf, Users, Package } from 'lucide-react';
+import { User, Mail, MessageSquare, Heart, CheckCircle, ArrowRight, Leaf, Users, Package } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import volunteerData from '../data/volunteer.data.json';
 import './Volunteer.css';
@@ -8,9 +8,9 @@ import './Volunteer.css';
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 const BENEFIT_ICONS: Record<string, React.ReactNode> = {
-  Leaf:    <Leaf size={18} />,
-  Heart:   <Heart size={18} />,
-  Users:   <Users size={18} />,
+  Leaf: <Leaf size={18} />,
+  Heart: <Heart size={18} />,
+  Users: <Users size={18} />,
   Package: <Package size={18} />,
 };
 
