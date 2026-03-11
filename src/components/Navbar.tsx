@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import globalData from '../data/global.data.json';
 import { Leaf, Menu, X, Heart, Languages, ArrowRight } from 'lucide-react';
 import './Navbar.css';
 
@@ -62,7 +63,7 @@ const Navbar: React.FC = () => {
             </button>
 
             <a
-              href="https://vaki.co/politicamente-correcto"
+              href={globalData.links.donate}
               target="_blank"
               rel="noopener noreferrer"
               className="donate-btn"
@@ -117,9 +118,11 @@ const Navbar: React.FC = () => {
                 <button className="lang-btn" onClick={toggleLanguage}>
                   <Languages size={14} /> {i18n.language.toUpperCase()}
                 </button>
-                <a href="https://vaki.co" className="donate-btn">
-                  <Heart size={14} fill="currentColor" /> {t('nav.donate')}
-                </a>
+                <div className="mobile-donate">
+                  <a href={globalData.links.donate} className="donate-btn">
+                    <Heart size={14} fill="currentColor" /> {t('nav.donate')}
+                  </a>
+                </div>
               </motion.div>
             </div>
           </motion.div>

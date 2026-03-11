@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import farmVideo from '../assets/farm_video.mp4';
 import homeData from '../data/home.data.json';
+import globalData from '../data/global.data.json';
 import './Home.css';
 
 /* ── Icon lookup ─────────────────────────────────── */
@@ -260,7 +261,7 @@ const Home: React.FC = () => {
               <a href="/volunteer" className="btn-primary" style={{ textDecoration: 'none' }}>
                 {t('home.cta_band.volunteer')} <ArrowRight size={16} />
               </a>
-              <a href="https://vaki.co" target="_blank" rel="noopener noreferrer" className="btn-amber" style={{ textDecoration: 'none' }}>
+              <a href={globalData.links.donate} target="_blank" rel="noopener noreferrer" className="btn-amber" style={{ textDecoration: 'none' }}>
                 {t('home.cta_band.donate')}
               </a>
             </div>

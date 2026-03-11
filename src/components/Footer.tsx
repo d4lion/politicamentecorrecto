@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Leaf, Mail, MapPin, Instagram, Facebook, Twitter, Heart } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import globalData from '../data/global.data.json';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -45,7 +46,7 @@ const Footer: React.FC = () => {
             <h4>{t('footer.sections.participate')}</h4>
             <ul>
               <li><a href="/volunteer">{t('footer.links.volunteer_cta')}</a></li>
-              <li><a href="https://vaki.co" target="_blank" rel="noopener noreferrer">{t('footer.links.donate')}</a></li>
+              <li><a href={globalData.links.donate} target="_blank" rel="noopener noreferrer">{t('footer.links.donate')}</a></li>
               <li><a href="/volunteer">{t('footer.links.ally')}</a></li>
             </ul>
           </div>
