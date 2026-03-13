@@ -68,10 +68,22 @@
       "label": "Aliados",
       "title": "Respaldados por organizaciones que creen en el cambio",
       "desc": "Trabajamos con socios comprometidos con la sostenibilidad y la educación.",
-      "a1": { "name": "Aliado Estratégico 1", "role": "Reciclaje & Sostenibilidad" },
-      "a2": { "name": "Aliado Estratégico 2", "role": "Apoyo Logístico" },
-      "a3": { "name": "Aliado Estratégico 3", "role": "Distribución Regional" },
-      "a4": { "name": "Aliado Estratégico 4", "role": "Fundación Educativa" }
+      "a1": {
+        "name": "Aliado Estratégico 1",
+        "role": "Reciclaje & Sostenibilidad"
+      },
+      "a2": {
+        "name": "Aliado Estratégico 2",
+        "role": "Apoyo Logístico"
+      },
+      "a3": {
+        "name": "Aliado Estratégico 3",
+        "role": "Distribución Regional"
+      },
+      "a4": {
+        "name": "Aliado Estratégico 4",
+        "role": "Fundación Educativa"
+      }
     },
     "cta_band": {
       "title": "¿Quieres ser parte del cambio?",
@@ -147,7 +159,11 @@
       "message_label": "¿Cómo quieres ayudar?",
       "message_placeholder": "Cuéntanos sobre ti y cómo te gustaría contribuir...",
       "submit": "Enviar solicitud",
-      "privacy": "Tus datos están seguros. No los compartimos con terceros."
+      "privacy": "Tus datos están seguros. No los compartimos con terceros.",
+      "city_label": "Ciudad",
+      "city_placeholder": "Tu ciudad",
+      "phone_label": "Teléfono",
+      "phone_placeholder": "Tu teléfono"
     },
     "success": {
       "title": "¡Gracias por unirte!",

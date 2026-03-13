@@ -68,10 +68,22 @@
       "label": "Allies",
       "title": "Backed by organizations that believe in change",
       "desc": "We work with partners committed to sustainability and education.",
-      "a1": { "name": "Strategic Ally 1", "role": "Recycling & Sustainability" },
-      "a2": { "name": "Strategic Ally 2", "role": "Logistics Support" },
-      "a3": { "name": "Strategic Ally 3", "role": "Regional Distribution" },
-      "a4": { "name": "Strategic Ally 4", "role": "Educational Foundation" }
+      "a1": {
+        "name": "Strategic Ally 1",
+        "role": "Recycling & Sustainability"
+      },
+      "a2": {
+        "name": "Strategic Ally 2",
+        "role": "Logistics Support"
+      },
+      "a3": {
+        "name": "Strategic Ally 3",
+        "role": "Regional Distribution"
+      },
+      "a4": {
+        "name": "Strategic Ally 4",
+        "role": "Educational Foundation"
+      }
     },
     "cta_band": {
       "title": "Want to be part of the change?",
@@ -147,7 +159,11 @@
       "message_label": "How do you want to help?",
       "message_placeholder": "Tell us about yourself and how you'd like to contribute...",
       "submit": "Submit application",
-      "privacy": "Your data is safe. We do not share it with third parties."
+      "privacy": "Your data is safe. We do not share it with third parties.",
+      "city_label": "City",
+      "city_placeholder": "Your city",
+      "phone_label": "Phone Number",
+      "phone_placeholder": "Your phone number"
     },
     "success": {
       "title": "Thank you for joining!",
