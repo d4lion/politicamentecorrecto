@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Instagram, Facebook, Twitter } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 import './SideNav.css';
 
 const SideNav: React.FC = () => {
@@ -12,11 +12,11 @@ const SideNav: React.FC = () => {
       className="side-nav"
     >
       <div className="social-links">
-        <a href="#" className="social-icon" aria-label="Instagram"><Instagram size={16} /></a>
-        <a href="#" className="social-icon" aria-label="Facebook"><Facebook size={16} /></a>
-        <a href="#" className="social-icon" aria-label="Twitter"><Twitter size={16} /></a>
+        <a href="https://www.instagram.com/politicamentecorrectometa/" className="social-icon" aria-label="Instagram"><Instagram size={16} /></a>
+        <a href="https://www.facebook.com/politicamentecorrectometa/" className="social-icon" aria-label="Facebook"><Facebook size={16} /></a>
+
       </div>
-      <div className="side-line" />
+
     </motion.div>
   );
 };
