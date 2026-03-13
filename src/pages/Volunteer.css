@@ -184,6 +184,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 17px;
 }
 
 .success-card {
@@ -227,7 +228,19 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .vol-form-wrap {
     padding: 28px 24px;
   }
+}
+
+/* LOADER ANIMATION */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }

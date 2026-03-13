@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { User, Mail, MessageSquare, Heart, CheckCircle, ArrowRight, Leaf, Users, Package } from 'lucide-react';
+import { User, Mail, MessageSquare, Heart, CheckCircle, ArrowRight, Leaf, Users, Package, MapPin, Loader2, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import volunteerData from '../data/volunteer.data.json';
 import './Volunteer.css';
+import emailjs from '@emailjs/browser';
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -19,20 +20,51 @@ const BENEFIT_KEYS = [
   'volunteer.benefits.children',
   'volunteer.benefits.network',
   'volunteer.benefits.circular',
+
 ];
+
+
 
 const Volunteer: React.FC = () => {
   const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  // EmailJS variables 
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const handleSubmit = (e: React.FormEvent) => {
+
+    const data = new FormData(e.target as HTMLFormElement);
+
+    const templateParams = {
+      name: data.get('name') as string,
+      email: data.get('email') as string,
+      city: data.get('city') as string,
+      message: data.get('message') as string,
+      phone: data.get('phone') as string,
+    };
+
+    setLoading(true);
+
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(() => {
+      setSubmitted(true);
+    }).catch((err) => {
+      console.error(err);
+    }).finally(() => {
+      setLoading(false);
+    })
+
     e.preventDefault();
-    setSubmitted(true);
+
   };
 
   if (submitted) {
     return (
-      <div className="volunteer-page success-state">
+      <div className="volunteer-page success-state ">
         <motion.div
           initial={{ scale: 0.85, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -106,18 +138,44 @@ const Volunteer: React.FC = () => {
           <form onSubmit={handleSubmit} className="vol-form">
             <div className="input-grp">
               <label><User size={15} /> {t('volunteer.form.name_label')}</label>
-              <input type="text" placeholder={t('volunteer.form.name_placeholder')} required />
+              <input type="text" name="name" placeholder={t('volunteer.form.name_placeholder')} required />
             </div>
+
             <div className="input-grp">
               <label><Mail size={15} /> {t('volunteer.form.email_label')}</label>
-              <input type="email" placeholder={t('volunteer.form.email_placeholder')} required />
+              <input type="email" name="email" placeholder={t('volunteer.form.email_placeholder')} required />
+            </div>
+
+            <div className="input-grp">
+              <label><Phone size={15} /> {t('volunteer.form.phone_label')}</label>
+              <input type="tel" onKeyPress={(e) => {
+                if (!/[0-9]/.test(e.key)) e.preventDefault();
+              }} name="phone" placeholder={t('volunteer.form.phone_placeholder')} minLength={10} maxLength={10} required />
+            </div>
+
+            <div className="input-grp">
+              <label><MapPin size={15} /> {t('volunteer.form.city_label')}</label>
+              <select name="city" required style={{ width: '100%', padding: '10px', border: '1px solid #ccc', borderRadius: '5px', fontSize: '16px', color: '#333', backgroundColor: '#fff', appearance: 'none', WebkitAppearance: 'none', cursor: 'pointer', outline: 'none', zIndex: 1 }}>
+                {volunteerData.departmentOptions.map((option, i) => (
+                  <option key={i} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
             </div>
             <div className="input-grp">
               <label><MessageSquare size={15} /> {t('volunteer.form.message_label')}</label>
-              <textarea placeholder={t('volunteer.form.message_placeholder')} rows={4} required />
+              <textarea name="message" placeholder={t('volunteer.form.message_placeholder')} rows={4} required />
             </div>
             <button type="submit" className="btn-primary vol-submit">
-              {t('volunteer.form.submit')} <ArrowRight size={17} />
+
+              {loading ? (
+                <Loader2 size={25} className="animate-spin" />
+              ) : (
+                <>
+                  {t('volunteer.form.submit')} <ArrowRight size={22} />
+                </>
+              )}
             </button>
             <p className="form-privacy">{t('volunteer.form.privacy')}</p>
           </form>
