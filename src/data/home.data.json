@@ -1,15 +1,43 @@
 {
   "stats": [
-    { "key": "backpacks", "value": "+1.500", "icon": "Package" },
-    { "key": "volunteers", "value": "50+",    "icon": "Users"   },
-    { "key": "cities",     "value": "5",       "icon": "MapPin"  },
-    { "key": "years",      "value": "7",       "icon": "Calendar"}
+    {
+      "key": "backpacks",
+      "value": "+1.500",
+      "icon": "Package"
+    },
+    {
+      "key": "volunteers",
+      "value": "50+",
+      "icon": "Users"
+    },
+    {
+      "key": "cities",
+      "value": "5",
+      "icon": "MapPin"
+    },
+    {
+      "key": "years",
+      "value": "7",
+      "icon": "Calendar"
+    }
   ],
   "processSteps": [
-    { "num": "01", "icon": "Recycle"  },
-    { "num": "02", "icon": "Droplets" },
-    { "num": "03", "icon": "Scissors" },
-    { "num": "04", "icon": "Gift"     }
+    {
+      "num": "01",
+      "icon": "Recycle"
+    },
+    {
+      "num": "02",
+      "icon": "Droplets"
+    },
+    {
+      "num": "03",
+      "icon": "Scissors"
+    },
+    {
+      "num": "04",
+      "icon": "Gift"
+    }
   ],
   "testimonials": [
     {
@@ -32,15 +60,47 @@
     }
   ],
   "allies": [
-    { "id": "a1", "name_key": "home.allies.a1.name", "role_key": "home.allies.a1.role" },
-    { "id": "a2", "name_key": "home.allies.a2.name", "role_key": "home.allies.a2.role" },
-    { "id": "a3", "name_key": "home.allies.a3.name", "role_key": "home.allies.a3.role" },
-    { "id": "a4", "name_key": "home.allies.a4.name", "role_key": "home.allies.a4.role" }
+    {
+      "id": "vaki",
+      "name_key": "home.allies.a1.name",
+      "role_key": "home.allies.a1.role",
+      "img": "/src/assets/allies/vaki.png"
+    },
+    {
+      "id": "a2",
+      "name_key": "home.allies.a2.name",
+      "role_key": "home.allies.a2.role",
+      "img": ""
+    },
+    {
+      "id": "a3",
+      "name_key": "home.allies.a3.name",
+      "role_key": "home.allies.a3.role",
+      "img": ""
+    },
+    {
+      "id": "a4",
+      "name_key": "home.allies.a4.name",
+      "role_key": "home.allies.a4.role",
+      "img": ""
+    }
   ],
   "trustPoints": [
-    { "icon": "Shield",      "key": "home.trust.item1" },
-    { "icon": "Award",       "key": "home.trust.item2" },
-    { "icon": "CheckCircle", "key": "home.trust.item3" },
-    { "icon": "Leaf",        "key": "home.trust.item4" }
+    {
+      "icon": "Shield",
+      "key": "home.trust.item1"
+    },
+    {
+      "icon": "Award",
+      "key": "home.trust.item2"
+    },
+    {
+      "icon": "CheckCircle",
+      "key": "home.trust.item3"
+    },
+    {
+      "icon": "Leaf",
+      "key": "home.trust.item4"
+    }
   ]
 }
