@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
         <div className="navbar-inner">
           <NavLink to="/" className="logo">
             <div className="logo-icon-wrap">
-              <Leaf size={18} />
+              <img src="/src/assets/politicamentecorrecto_logo.png" alt="Logo" />
             </div>
             <div className="logo-text">
               <span className="logo-main">Políticamente</span>
