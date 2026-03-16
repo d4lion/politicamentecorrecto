@@ -13,30 +13,53 @@ import './Home.css';
 
 /* ── Icon lookup ─────────────────────────────────── */
 const ICONS: Record<string, React.ReactNode> = {
-  Package:     <Package size={28} />,
-  Users:       <Users size={28} />,
-  MapPin:      <MapPin size={28} />,
-  Calendar:    <Calendar size={28} />,
-  Recycle:     <Recycle />,
-  Droplets:    <Droplets />,
-  Scissors:    <Scissors />,
-  Gift:        <Gift />,
-  Shield:      <Shield size={18} />,
-  Award:       <Award size={18} />,
+  Package: <Package size={28} />,
+  Users: <Users size={28} />,
+  MapPin: <MapPin size={28} />,
+  Calendar: <Calendar size={28} />,
+  Recycle: <Recycle />,
+  Droplets: <Droplets />,
+  Scissors: <Scissors />,
+  Gift: <Gift />,
+  Shield: <Shield size={18} />,
+  Award: <Award size={18} />,
   CheckCircle: <CheckCircle size={18} />,
-  Leaf:        <Leaf size={18} />,
+  Leaf: <Leaf size={18} />,
 };
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 const fadeUp = (delay = 0) => ({
-  initial:     { opacity: 0, y: 32 },
+  initial: { opacity: 0, y: 32 },
   whileInView: { opacity: 1, y: 0 },
-  viewport:    { once: true },
-  transition:  { duration: 0.7, delay, ease: EASE },
+  viewport: { once: true },
+  transition: { duration: 0.7, delay, ease: EASE },
 });
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
+  const video0Ref = React.useRef<HTMLVideoElement>(null);
+  const video1Ref = React.useRef<HTMLVideoElement>(null);
+
+  const handleTimeUpdate = (isPrimary: boolean) => (e: React.SyntheticEvent<HTMLVideoElement>) => {
+    const currentVideo = e.currentTarget;
+    const nextVideo = isPrimary ? video1Ref.current : video0Ref.current;
+    
+    if (!currentVideo.duration || !nextVideo) return;
+
+    // Initiate crossfade 1.2s before the video ends to hide the jump
+    if (currentVideo.currentTime >= currentVideo.duration - 1.2) {
+      if (nextVideo.paused) {
+        nextVideo.currentTime = 0;
+        nextVideo.play().catch(() => {});
+        currentVideo.style.opacity = '0';
+        nextVideo.style.opacity = '1';
+      }
+    }
+  };
+
+  const handleEnded = (e: React.SyntheticEvent<HTMLVideoElement>) => {
+    e.currentTarget.pause();
+  };
 
   return (
     <div className="home-wrapper">
@@ -45,12 +68,25 @@ const Home: React.FC = () => {
       <section className="hero">
         <div className="hero-bg">
           <video
+            ref={video0Ref}
             className="hero-bg-video"
+            style={{ opacity: 1, transition: 'opacity 1.2s ease-in-out', position: 'absolute', inset: 0 }}
             src={farmVideo}
             autoPlay
             muted
-            loop
             playsInline
+            onTimeUpdate={handleTimeUpdate(true)}
+            onEnded={handleEnded}
+          />
+          <video
+            ref={video1Ref}
+            className="hero-bg-video"
+            style={{ opacity: 0, transition: 'opacity 1.2s ease-in-out', position: 'absolute', inset: 0 }}
+            src={farmVideo}
+            muted
+            playsInline
+            onTimeUpdate={handleTimeUpdate(false)}
+            onEnded={handleEnded}
           />
           <div className="hero-bg-overlay" />
         </div>
@@ -236,7 +272,7 @@ const Home: React.FC = () => {
               <motion.div key={a.id} {...fadeUp(i * 0.1)} className="ally-card card-beige">
                 <div className="ally-logo-placeholder">
                   <div className="ally-logo-box">
-                    <Award size={28} />
+                    <img src={a.img} alt={t(a.name_key)} className={`ally-logo-${a.id}`} />
                   </div>
                 </div>
                 <div className="ally-info">

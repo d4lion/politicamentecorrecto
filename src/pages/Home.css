@@ -68,12 +68,10 @@
 .hero-bg-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    160deg,
-    rgba(12, 28, 18, 0.80) 0%,
-    rgba(26, 64, 48, 0.68) 50%,
-    rgba(45, 106, 79, 0.52) 100%
-  );
+  background: linear-gradient(160deg,
+      rgba(12, 28, 18, 0.80) 0%,
+      rgba(26, 64, 48, 0.68) 50%,
+      rgba(45, 106, 79, 0.52) 100%);
 }
 
 .hero-content {
@@ -110,7 +108,7 @@
   color: white;
   letter-spacing: -1px;
   margin-bottom: 22px;
-  text-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title-accent {
@@ -194,13 +192,22 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
 @keyframes scrollPulse {
-  0%, 100% { transform: translateY(0); opacity: 0.5; }
-  50% { transform: translateY(6px); opacity: 1; }
+
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
 }
 
 /* ─── TRUST BAR ─── */
@@ -223,7 +230,7 @@
   display: flex;
   align-items: center;
   gap: 9px;
-  color: rgba(255,255,255,0.88);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 0.84rem;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -481,8 +488,8 @@
 }
 
 .ally-logo-box {
-  width: 72px;
-  height: 72px;
+  width: 200px;
+  height: 200px;
   border-radius: var(--radius-sm);
   background: var(--white);
   border: 1.5px dashed var(--beige-warm);
@@ -550,9 +557,13 @@
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 1024px) {
-  .stats-grid, .process-grid, .allies-grid {
+
+  .stats-grid,
+  .process-grid,
+  .allies-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -562,22 +573,31 @@
   .mission-grid {
     grid-template-columns: 1fr;
   }
+
   .mission-visual {
     order: -1;
   }
+
   .img-placeholder {
     height: 240px;
   }
-  .stats-grid, .process-grid, .allies-grid, .testimonials-grid {
+
+  .stats-grid,
+  .process-grid,
+  .allies-grid,
+  .testimonials-grid {
     grid-template-columns: 1fr;
   }
+
   .cta-band-inner {
     flex-direction: column;
     text-align: center;
   }
+
   .cta-band-actions {
     justify-content: center;
   }
+
   .trust-bar-inner {
     gap: 16px;
     justify-content: flex-start;
@@ -585,7 +605,9 @@
 }
 
 @media (max-width: 480px) {
-  .stats-grid, .process-grid {
+
+  .stats-grid,
+  .process-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
