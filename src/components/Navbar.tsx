@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import globalData from '../data/global.data.json';
-import { Leaf, Menu, X, Heart, Languages, ArrowRight } from 'lucide-react';
+import { Menu, X, Heart, Languages, ArrowRight } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
